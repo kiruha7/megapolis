@@ -7,7 +7,7 @@ with open('monster_game.csv', encoding='UTF-8') as f:
         cur_sp.append(data[0])
         if data[1] == 'регенерация':
             cur_sp.append('регенерация')
-            cur_sp.append(int(data[6]) * int(data[2]) / 100)
+            cur_sp.append(int(data[5]) * int(data[2]) / 100)
         elif data[1] == 'усиление атаки':
             cur_sp.append('усиление атаки')
             cur_sp.append(int(data[3]) * int(data[2]) / 100)
